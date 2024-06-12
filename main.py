@@ -1,13 +1,12 @@
-from Shortener import shorten_url , get_original_url , create_user
+from Shortener import shorten_url, get_original_url, create_user
 
-username = "Angel"
-password = "PASSWORD1313"
+username = "wanja"
+password = "1u28823"
 create_user(username, password)
 
-original_url = 'https://www.google.com/search?q=17+usd+to+ksh&sca_esv=e88f0e6c9c1a762d&sxsrf=ADLYWIL1E_7rhltJjfudROPSVi7nSq_s_w%3A1718109407930&ei=30RoZrq5OPKBxc8PmtWggA4&oq=17+USD+to+KAH&gs_lp=Egxnd3Mtd2l6LXNlcnAiDTE3IFVTRCB0byBLQUgqAggAMgwQABiABBgNGEYYggIyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyGBAAGIAEGA0YRhiCAhiXBRiMBRjdBNgBAUivlwFQiQJY94kBcAJ4AZABAJgBvASgAfYtqgEKMi0xMC43LjEuMbgBAcgBAPgBAZgCD6AC0i_CAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBhAAGAcYHsICDhAAGIAEGJECGLEDGIoFwgIKEAAYgAQYFBiHAsICBRAAGIAEwgILEAAYgAQYkQIYigXCAggQABgHGAgYHsICBhAAGAgYHsICCBAAGAcYChgewgIPEAAYgAQYFBiHAhhGGIICwgIIEAAYFhgKGB7CAgYQABgWGB7CAggQABgWGB4YD8ICGxAAGIAEGBQYhwIYRhiCAhiXBRiMBRjdBNgBAZgDAIgGAZAGCroGBggBEAEYE5IHDzIuMC40LjUuMi4wLjEuMaAH92w&sclient=gws-wiz-serp'
+original_url = 'https://replit.com/@victorwangari65/Nodejs#index.js'
 
 short_url = shorten_url(original_url, username)
 print(f"Original URL: {original_url} -> Short URL: {short_url}")
-
 retrieved_url = get_original_url(short_url)
 print(f"Short URL: {short_url} -> Retrieved URL: {retrieved_url}")
