@@ -58,15 +58,15 @@ def get_original_url(short_url):
     finally:
         session.close()  # Ensure the session is closed
 
-def create_user(username, password): 
-    session = Session()  # Create a new session instance
-    try:
-        if session.query(User).filter_by(username=username).first():
-            raise ValueError("User already exists")
-        new_user = User(username=username, password=password)
-        session.add(new_user)
-        session.commit()
-        return new_user
-    finally:
+# def create_user(username, password): 
+#     session = Session()  # Create a new session instance
+#     try:
+#         if session.query(User).filter_by(username=username).first():
+#             raise ValueError("User already exists")
+#         new_user = User(username=username, password=password)
+#         session.add(new_user)
+#         session.commit()
+#         return new_user
+#     finally:
     
-        session.close()  # Ensure the session is closed
+#         session.close()  # Ensure the session is closed
