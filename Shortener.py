@@ -31,7 +31,7 @@ def decode_url(short_url):
     return num
 
 def shorten_url(original_url, username):
-    session = Session()  # Create a new session instance
+    session = Session()  
     try:
         user = session.query(User).filter_by(username=username).first()
         if not user:
@@ -68,4 +68,5 @@ def create_user(username, password):
         session.commit()
         return new_user
     finally:
+    
         session.close()  # Ensure the session is closed
